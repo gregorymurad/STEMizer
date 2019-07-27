@@ -11,10 +11,10 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '30aea3f479006422c7fd8d81b144e0ab'
 
 #setting up the database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-#DATABASE_URL = os.environ['DATABASE_URL']
-#conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-#app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 
 '''An instance of SQLAlchemy, represented as classes like in object-oriented paradigm, also known as models'''
 db = SQLAlchemy(app)
