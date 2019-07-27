@@ -1,0 +1,79 @@
+{% extends "stemizer_homepage.html" %}
+
+		<!-- Started Background -->
+		<div class="started-bg">
+			<div class="slide" style="background-image: url(../../static/vita/images/works/school.jpg);"></div>
+		</div>
+		<!-- Header -->
+		<header>
+			<div class="top-menu">
+				<ul>
+					<li class="active">
+						<a class="btn_animated" href="#home-section"><span class="circle">Home</span></a>
+					</li>
+                    {% if current_user.is_authenticated %}
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('account') }}"><span class="circle">Account</span></a>
+					    </li>
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('logout') }}"><span class="circle">Logout</span></a>
+					    </li>
+                    {% else %}
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('login') }}"><span class="circle">Login</span></a>
+					    </li>
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('register') }}"><span class="circle">Register</span></a>
+					    </li>
+                    {% endif %}
+
+				</ul>
+				<a href="#" class="menu-btn"><span></span></a>
+			</div>
+		</header>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+
+			<!-- Wrapper -->
+			<div class="wrapper">
+
+				<div class="blog-single content-box">
+					<div class="row">
+						<div class="col col-m-12 col-t-12 col-d-12">
+
+							<div class="text-box">
+
+								<h1>Welcome to STEMizer</h1>
+								<div class="blog-detail">Integrating STEM <span>into people's life</span></div>
+
+								<!--<div class="blog-image">
+									<img src="../../static/vita/images/blog/blog1.jpg" alt="">
+								</div>-->
+
+								<div class="blog-content">
+
+
+            <p class="lead mb-2">An online educational tool to apply Robotics concepts into STEM fields</p>
+
+            <h1>{{ current_user.username }}</h1>
+
+
+        </div>
+
+    </div>
+
+    </div>
+                    </div>
+                </div>
+            </div>
+
+{% endblock %}

@@ -1,0 +1,144 @@
+{% extends "stemizer_homepage.html" %}
+
+{%  block content %}
+		<!-- Started Background -->
+		<div class="started-bg">
+			<div class="slide" style="background-image: url(../../static/vita/images/works/school.jpg);"></div>
+		</div>
+		<!-- Header -->
+		<header>
+			<div class="top-menu">
+				<ul>
+					<li class="active">
+						<a class="btn_animated" href="#home-section"><span class="circle">Home</span></a>
+					</li>
+                    {% if current_user.is_authenticated %}
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('account') }}"><span class="circle">Account</span></a>
+					    </li>
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('logout') }}"><span class="circle">Logout</span></a>
+					    </li>
+                    {% else %}
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('login') }}"><span class="circle">Login</span></a>
+					    </li>
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('register') }}"><span class="circle">Register</span></a>
+					    </li>
+                    {% endif %}
+
+				</ul>
+				<a href="#" class="menu-btn"><span></span></a>
+			</div>
+		</header>
+    </div>
+
+
+
+			<!-- Wrapper -->
+			<div class="wrapper">
+
+
+
+				<div class="blog-single content-box">
+					<div class="row">
+						<div class="col col-m-12 col-t-12 col-d-12">
+
+							<div class="text-box">
+
+
+
+                                                <div class="col-md-8">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  <strong>{{ message }}</strong>
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+        </div>
+
+								<h1>Welcome to STEMizer</h1>
+								<div class="blog-detail">Integrating STEM <span>into people's life</span></div>
+
+								<!--<div class="blog-image">
+									<img src="../../static/vita/images/blog/blog1.jpg" alt="">
+								</div>-->
+
+								<div class="blog-content">
+
+
+            <p class="lead mb-2">An online educational tool to apply Robotics concepts into STEM fields</p>
+
+         <form method="POST" action="">
+                    {{ form.hidden_tag() }}
+
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-4">Log in by providing your email and password:</legend>
+
+                        {# code for the email field #}
+                        <div class="form-group" align="center">
+                            {{ form.email.label(class="form-control-label") }}<br>
+                                                {% if form.email.errors %}
+                                {{ form.email(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.email.errors %}
+                                        <span>
+                                            {{ error }}
+                                        </span>
+                                    {% endfor %}
+                                </div>
+
+                            {% else %}
+                                {{ form.email(class="form-control-lg") }}
+                            {% endif %}
+                        </div>
+
+                        {# code for the password field #}
+                        <div class="form-group" align="center">
+                            {{ form.password.label(class="form-control-label") }}<br>
+                                                {% if form.password.errors %}
+                                {{ form.password(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.password.errors %}
+                                        <span>
+                                            {{ error }}
+                                        </span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.password(class="form-control-lg") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-check">
+                            {{ form.remember(class="form-check-input") }}
+                            {{ form.remember.label(class="form-check-label") }}
+
+                        </div>
+                    </fieldset>
+                            <div class="form-group">
+                            {{ form.submit(class="btn btn-outline-info") }}
+                        </div>
+                        <small class="text-muted ml-2">
+                            <a href="#">Forgot Password?</a>
+                        </small>
+                </form>
+            </div>
+          </div>
+        </div>
+        <div class="border-bottom pt-3" align="center">
+            <large class="text-muted">
+               Would You Like to Join Us? <a class="ml-2" href="{{ url_for('register') }}">Enroll Now</a>
+            </large>
+        </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends "homepage_old.html" %}
+
+{% block content %}
+
+
+        <link rel="stylesheet" type="text/css" href="static/stemizer/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="static/stemizer/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="static/stemizer/css/component.css" />
+
+
+		<script src="static/stemizer/js/modernizr.custom.js">
+
+
+        </script>
+<body>
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+
+
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+<h2>Welcome to STEMIZER</h2>
+            <p class="lead mb-2">An online educational tool to apply Robotics concepts into STEM field</p>
+          <p class="lead mb-5">This module is optimized for 5th Grade.</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Learning Goals</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">What You Will Learn</h3>
+        <h2 class="mb-5">This course will cover the following areas:</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+              <a href="https://realpython.com/"><i class="icon-screen-desktop"></i></a>
+          </span>
+          <h4>
+            <strong>Introduction to Robotics</strong>
+          </h4>
+          <p class="text-faded mb-0">With exercises in different platforms (Sphero, VEX and Arduino)</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+              <a href="https://www.tutorialspoint.com/flask/"><i class="icon-list"></i></a>
+          </span>
+          <h4>
+            <strong>Math</strong>
+          </h4>
+          <p class="text-faded mb-0">Improve your Math skills with challenging exercises</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <a href="https://www.lynda.com/Java-tutorials/Programming-Foundations-Design-Patterns/782131-2.html"><i class="icon-layers"></i></a>
+
+          </span>
+          <h4>
+            <strong>Programming</strong>
+          </h4>
+          <p class="text-faded mb-0">Learn How to Program in One of the Most Popular Languages in the World</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+              <a href="https://lab.github.com/githubtraining/introduction-to-github"><i class="icon-social-github"></i></a>
+
+          </span>
+          <h4>
+            <strong>Remote Lab</strong>
+          </h4>
+          <p class="text-faded mb-0">Make Use of an Advanced Remote Robotics Laboratory to test Your Algorithms</p>
+        </div>
+      </div>
+    </div>
+  </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<input placeholder="Search" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-article">Chapter 1</a>
+{#									<ul class="gn-submenu">#}
+{#										<li><a class="gn-icon icon-school">Vector Illustrations</a></li>#}
+{#										<li><a class="gn-icon gn-icon-photoshop">Photoshop files</a></li>#}
+{#									</ul>#}
+								</li>
+								<li><a class="gn-icon gn-icon-article" href="{{url_for('cbsd')}}">Chapter 2</a></li>
+                                <li><a class="gn-icon gn-icon-article">Chapter 3</a></li>
+                                <li><a class="gn-icon gn-icon-article" href="{{url_for('chapter4')}}">Chapter 4</a></li>
+                                <li><a class="gn-icon gn-icon-article">Chapter 5</a></li>
+                                <li><a class="gn-icon gn-icon-article">Chapter 6</a></li>
+                                <li><a class="gn-icon gn-icon-article">Chapter 7</a></li>
+								<li><a class="gn-icon gn-icon-help">Help</a></li>
+{#								<li>#}
+{#									<a class="gn-icon gn-icon-archive">Archives</a>#}
+{#									<ul class="gn-submenu">#}
+{#										<li><a class="gn-icon gn-icon-article">Articles</a></li>#}
+{#										<li><a class="gn-icon gn-icon-pictures">Images</a></li>#}
+{#										<li><a class="gn-icon gn-icon-videos">Videos</a></li>#}
+{#									</ul>#}
+{#								</li>#}
+                                <li><a class="gn-icon gn-icon-cog">Settings</a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
+		</div>
+
+</body>
+    <!-- /container -->
+		<script src="static/stemizer/js/classie.js"></script>
+		<script src="static/stemizer/js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+{% endblock %}

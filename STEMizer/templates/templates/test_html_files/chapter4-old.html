@@ -1,0 +1,514 @@
+{% extends "homepage_old.html" %}
+
+{% block content %}
+        <style>
+
+
+    code {
+    background: hsl(220, 80%, 90%);
+        alignment: left;
+}
+
+pre {
+    white-space: pre-wrap;
+    alignment: left;
+    background: hsl(30,80%,90%);
+}
+
+        div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+
+        .noselect {
+                white-space: pre-wrap;
+    alignment: left;
+    background: hsl(30,80%,90%);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+    </style>
+    		<link rel="stylesheet" type="text/css" href="static/stemizer/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="static/stemizer/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="static/stemizer/css/component.css" />
+		<script src="static/stemizer/js/modernizr.custom.js"></script>
+
+
+    <body>
+
+    		<header>
+			<div class="top-menu">
+				<ul>
+					<li class="active">
+						<a class="btn_animated" href="#home-section"><span class="circle">Home</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#about-section"><span class="circle">About</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#skills-section"><span class="circle">Skills</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#experience-section"><span class="circle">Experience</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#service-section"><span class="circle">Services</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#education-section"><span class="circle">Education</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#works-section"><span class="circle">Portfolio</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#clients-section"><span class="circle">Clients</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#pricing-section"><span class="circle">Pricing</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#blog-section"><span class="circle">Blog</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#contact-section"><span class="circle">Contact Me</span></a>
+					</li>
+				</ul>
+				<a href="#" class="menu-btn"><span></span></a>
+			</div>
+		</header>
+
+
+
+
+  <section class="content-section bg-light" id="about">
+
+
+
+    <div class="container text-muted">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+
+
+               <h2> Introduction </h2><br>
+
+
+<p>Python is one of the most popular programming languages today. According to the TIOBE Index (Links to an external site.), Python is the 3rd most popular languages, behind Java and C (two languages that have been taking turns for the top position for years).
+
+You might be wondering "Why learning Python? Is it really necessary, teacher?". I truly believe that by learning this new programming languages, you will be able to expand your knowledge
+
+Python is an interpreted, high-level and interactive programming language. Python is dynamically typed and a general-purpose language that supports multiple programming paradigms, including procedural, object-oriented, and even functional programming.
+
+Python's philosophy is to emphasize code readability and aims to help programmers write clear, logical code for small and large-scale projects. Python combines remarkable power with very clear syntax. Python has a huge community and due to its amazing libraries, it became the number 1 language in Data Science. Besides, Python runs on many Unix variants, on the Mac, and on Windows 2000 and later.
+</p>
+
+<br><p class="lead mb-2"> Use this Python interpreter to test your answers.</p>
+<div class="sticky">
+<iframe height="400px" width="100%" src="https://repl.it/repls/KnowledgeableCourteousListener?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+
+<p>
+In Python, we will do not write the type of the variable, we only need to write the name of the variable as you wish and assign, with the = symbol, a certain value. This value can be an integer, float, Boolean, list, tuple, dictionary.
+</p>
+      {# avoid copying #}
+{#<p class="noselect">message = "Hello COP 4814!"#}
+{#print(message)#}
+{#</p>#}
+<pre>message = "Hello COP 4814!"
+print(message)
+</pre>
+
+
+<p>Since Python is an interpreted language, you do not need to compile it. The interpreter will go from top to bottom and interprets each line of code.
+    Let's define other variables, assign values and print these values:
+</p>
+<pre>first_name = 'greg'
+print(first_name)</pre>
+
+            <p>You can call some functions for these variables, such as lower(), upper() and title() to convert the input string to lower, upper and title cases, respectively:
+</p>
+<pre>print(first_name.title())
+print(first_name.upper())
+
+last_name = "Reis"
+print(last_name.lower())
+
+first_name = 'alan'
+last_name = 'turing'</pre>
+
+<p>To concatenate strings, you can use the + symbol:
+</p>
+
+<pre>full_name = first_name + " " + last_name
+print(full_name)
+
+message = full_name.title() + " " + "is considered the father of moder computing."
+print(message)</pre>
+
+            <p>You can directly print and algebraic expression:
+</p>
+
+            <pre>print(4/2)
+print(3/2)
+print(3//2)</pre>
+
+            <p>And you might get interested in knowing the type of these variables. For that, all you need to do is call the type() function and pass the variable as an input parameter:
+</p>
+<pre>averageScore = 73.4
+
+print(type(averageScore))
+print(type(3//2))</pre>
+
+            <p>A list in Python is a mutable and ordered data structure. What does this mean? It means that you can modify, delete and values to any position and each element has an index that is defined by a definite sequence of natural numbers. The values of a list are inside the square brackets []. Lists can contain duplicate values.
+</p>
+
+            <pre>teachers = ['greg', 'leonardo', 'giri']
+
+print(type(students))</pre>
+
+            <p>A for loop is used to iterate over a sequence (it can be a list, a tuple, a dictionary, a set or even a string) and can be written as follows:
+</p>
+
+            <pre>for i in teachers:
+    print("Hello, " + i.title() + "!")</pre>
+
+            <p>You can index a list as follows:
+</p>
+
+<pre>dogs = ['border collie', 'australian cattle dog', "labrador retriever"]
+
+dog = dogs[0]
+print(dog)
+dog = dogs[1]
+
+print(dog.title())
+
+print(len(dogs))
+
+dog = dogs[-1]
+print(dog.title())
+
+dog = dogs[-2]
+print(dog)
+
+for i in dogs:
+   print("I like " + i + 's.')
+   print("No, I really really like " + i + "s.\n")</pre>
+
+<p>You can use the enumerate function to iterate over a sequence and have an automatic counter. An example:
+</p>
+
+            <pre>for j,k in enumerate(dogs):
+   place = str(j)
+   print("Place " + place + " has " + k.title() + "s.\n")</pre>
+
+            <p>How do you get the index of a certain value? Using the index() functions and passing the value you wish to find the position as input parameter:
+</p>
+
+            <pre>print(students.index('leonardo'))
+</pre>
+            <p>You can also use the insert() function to insert a certain value to a determined position:
+</p>
+
+            <pre>print(dogs[1])
+dogs.insert(1,"poodle")
+print(dogs[1])</pre>
+
+            <p>Or you can just use the append function to insert always to the end of the list:
+</p>
+
+            <pre>usernames = []
+
+usernames.append("david")
+usernames.append("nestor")
+usernames.append("andrius")
+
+print(usernames)
+
+for k in usernames:
+   print("Welcome, " + k.title() + "!")</pre>
+
+            <p>There is another built-in function that will be useful for us, sort(), that is used to sort based on a specific order (ascending or descending)
+</p>
+
+            <pre>usernames.sort()
+print(usernames)
+
+usernames.sort(reverse=True)
+print(usernames)</pre>
+
+<p>Ranges in Python are interesting: given the string "Gregory", range 0:2 will return the characters in position 0 and 1 (Gr); range 3:6 will return characters in position 3, 4 and 5 (gor). Other examples:
+</p>
+
+            <pre>usernames.append("dolores")
+usernames.append("karol")
+usernames.append("daniel")
+
+print(usernames)
+
+first_batch = usernames[:3] #0 can be omitted
+print(first_batch)
+
+#start in 1 all the way to 10
+for number in range(1,11):
+   print(number)
+
+#start in 0 all the way to 10
+for number in range(11):
+   print(number)
+
+for number in range(1,21,2): #you can also skip by 2
+   print(number)</pre>
+
+            <p>Classes in Python are pretty straightforward:
+</p>
+
+            <pre>import datetime
+from abc import abstractmethod, ABCMeta
+
+class FIU_Person:
+    __metaclass__ = ABCMeta
+
+    colors = "Blue and Gold"
+    def __init__(self, name,pantherID,first_year,age):
+        self.name = name
+        self.pantherID = pantherID
+        self.first_year = first_year
+        self.age = age
+
+    @abstractmethod
+    def whatDoIDo(self):
+        pass
+
+    def whoIsMe(self):
+        print("My name is " + self.name)
+
+    def howLongAtFIU(self):
+        x = datetime.datetime.now().year
+        if x-self.first_year > 1:
+            print("I have been at FIU for", str(x-self.first_year),"years.")
+        else:
+            print("I have been at FIU for", str(x-self.first_year),"year.")
+
+class Student(FIU_Person):
+    def __init__(self,degree,name,pantherID,first_year,age):
+        self.degree = degree
+        super().__init__(name,pantherID,first_year,age)
+
+    def whatDoIDo(self):
+        print("I study {0}.".format(self.degree))
+
+class Professor(FIU_Person):
+    def __init__(self, college, name, pantherID, first_year, age):
+        self.college = college
+        super().__init__(name, pantherID, first_year, age)
+
+    def whatDoIDo(self):
+        print("I work at {0}.".format(self.college))
+</pre>
+            <p>To instante objects:
+</p>
+<pre>nestor = Student("CS","Nestor",11111,2014,31)
+nestor.whoIsMe()
+nestor.howLongAtFIU()
+nestor.whatDoIDo()
+
+greg = Professor("SCIS","Greg",11111,2018,100)
+greg.whoIsMe()
+greg.howLongAtFIU()
+greg.whatDoIDo()
+print(greg.colors)
+greg.colors = "Red"
+print(greg.colors)
+greg.name="Gregory"
+print(greg.name)</pre>
+
+            <p>Another example:
+</p>
+
+<pre>class Elf():
+   def __init__(self,level,ability_scores=None):
+     self.level = level
+     self.ability_scores={
+         "str" : 11, "dex" : 12, "con" : 10,
+         "int" : 16, "wis" : 14, "cha" : 13
+         } if ability_scores is None else ability_scores
+     self.hp = 20 + self.ability_scores["cha"]
+
+gregElf = Elf("first_level",{
+"str" : 12, "dex" : 13, "con" : 11,
+"int" : 17, "wis" : 15, "cha" : 14
+})
+
+deyaElf = Elf("second_level")
+
+print(gregElf.ability_scores)
+print(deyaElf.ability_scores)
+print(gregElf.hp)
+print(deyaElf.hp)</pre>
+
+            <p>Dictionaries in Python are a mutable data structure that relies on the concept of keys instead of indices. In order to get retrieve a value stored in a dictionary, you need to refer to the key that holds that value:
+</p>
+
+            <pre>released_date={"iphone" : 2007,
+   "iphone 4" : 2010,
+   "iphone 5s" : 2013,
+   "iphone 7 / 7 Plus" : 2016,
+   "iphone X" : 2017}
+
+print(released_date)
+print(type(released_date))
+print(released_date['iphone 5s'])
+
+released_date["iphone XR"] = 2018
+
+print(released_date)
+
+print(len(released_date))
+
+del released_date["iphone"]
+
+print(len(released_date))
+
+for key,element in released_date.items():
+   print(element)
+
+capitals = dict()
+
+print(capitals)
+
+capitals['USA'] = "Washington"
+capitals['Jordan'] = "Amman"
+capitals['Lithuania'] = "Vilnius"
+capitals['Colombia'] = "Bogota"
+capitals['Brazil'] = "Brasilia"
+capitals['Peru'] = "Lima"
+capitals['Argentina'] = "Buenos Aires"
+capitals['Japan'] = "Tokyo"
+
+countries = ['France', "Lebanon", "USA", "Brazil", "Colombia"]
+
+print(type(capitals))
+print(type(countries))
+
+for i in countries:
+    if i in capitals:
+        print("The capital of " + i + " is " + capitals[i])
+    else:
+print("Unknown capital!")</pre>
+
+
+Exercises:
+
+Create a function to calculate the factorial a number using the for loop and range function
+Create a recursive function to calculate the factorial a number without for loop
+Create a function to get the maximum of two values (without using the max builtin function)
+Possible Answers:
+
+Exercise 1:
+
+def factorial(value):
+   fact = 1
+   for i in range(1,value+1):
+      fact *= i
+   print(fact)
+
+factorial(5)
+Exercise 2:
+
+def factorial2(value):
+   if value > 0:
+      return value*factorial2(value-1)
+   else:
+      return 1
+
+print(factorial2(5))
+Exercise 3:
+
+def max_(x,y):
+   if x > y:
+      return x
+   else:
+      return y
+
+print(max_(int(input()),int(input())))
+
+
+
+
+
+
+
+
+<br>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{#<div class="container">#}
+{#			<ul id="gn-menu" class="gn-menu-main">#}
+{#				<li class="gn-trigger">#}
+{#					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>#}
+{#					<nav class="gn-menu-wrapper">#}
+{#						<div class="gn-scroller">#}
+{#							<ul class="gn-menu">#}
+{#								<li class="gn-search-item">#}
+{#									<input placeholder="Search" type="search" class="gn-search">#}
+{#									<a class="gn-icon gn-icon-search"><span>Search</span></a>#}
+{#								</li>#}
+{#								<li>#}
+{#									<a class="gn-icon gn-icon-article">Chapter 1</a>#}
+{#									<ul class="gn-submenu">#}
+{#										<li><a class="gn-icon icon-school">Vector Illustrations</a></li>#}
+{#										<li><a class="gn-icon gn-icon-photoshop">Photoshop files</a></li>#}
+{#									</ul>#}
+{#								</li>#}
+{#								<li><a class="gn-icon gn-icon-article" href="{{url_for('cbsd')}}">Chapter 2</a></li>#}
+{#                                <li><a class="gn-icon gn-icon-article">Chapter 3</a></li>#}
+{#                                <li><a class="gn-icon gn-icon-article">Chapter 4</a></li>#}
+{#                                <li><a class="gn-icon gn-icon-article">Chapter 5</a></li>#}
+{#                                <li><a class="gn-icon gn-icon-article">Chapter 6</a></li>#}
+{#                                <li><a class="gn-icon gn-icon-article">Chapter 7</a></li>#}
+{#								<li><a class="gn-icon gn-icon-help">Help</a></li>#}
+{#								<li>#}
+{#									<a class="gn-icon gn-icon-archive">Archives</a>#}
+{#									<ul class="gn-submenu">#}
+{#										<li><a class="gn-icon gn-icon-article">Articles</a></li>#}
+{#										<li><a class="gn-icon gn-icon-pictures">Images</a></li>#}
+{#										<li><a class="gn-icon gn-icon-videos">Videos</a></li>#}
+{#									</ul>#}
+{#								</li>#}
+{#                                <li><a class="gn-icon gn-icon-cog">Settings</a></li>#}
+{#							</ul>#}
+{#						</div><!-- /gn-scroller -->#}
+{#					</nav>#}
+{#				</li>#}
+{#				<li></li>#}
+{#				<li></li>#}
+{#				<li></li>#}
+{#			</ul>#}
+{##}
+{##}
+{##}
+{#</div>#}
+
+</body>
+      	<!-- /container -->
+		<script src="static/stemizer/js/classie.js"></script>
+		<script src="static/stemizer/js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+{% endblock %}
+

@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>mCard - Material vCard/CV/Resume HTML Template</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/table.css">
+</head>
+<body>
+	<header class="dt-header dt-header_blue">
+		<span class="dt-logo">mCard - Material vCard/CV/Resume HTML Template</span>
+	</header>	
+	<div class="dt-container dt-container_flex">
+		<aside class="dt-navbar">
+			<nav class="dt-navbar__nav">
+				<div class="dt-navbar__section">
+					<ul class="dt-navbar__list">
+						<li><a href="#files_structure" class="dt-navbar__link">File structure</a></li>
+						<li><a href="#settings" class="dt-navbar__link">Settings</a></li>
+						<li><a href="#include_fonts" class="dt-navbar__link">Fonts</a></li>
+						<li><a href="#conts" class="dt-navbar__link">Contact Form PHP</a></li>
+						<li>
+							<a href="#html_structure" class="dt-navbar__link">HTML structure</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#html_structure_home" class="dt-navbar__link dt-navbar__link_nested">"Started" section</a></li>
+								<li><a href="#html_structure_about" class="dt-navbar__link dt-navbar__link_nested">"About" section</a></li>
+								<li><a href="#html_structure_skills" class="dt-navbar__link dt-navbar__link_nested">"Skills" section</a></li>
+								<li><a href="#html_structure_experience" class="dt-navbar__link dt-navbar__link_nested">"Experience" section</a></li>
+								<li><a href="#html_structure_service" class="dt-navbar__link dt-navbar__link_nested">"Service" section</a></li>
+								<li><a href="#html_structure_education" class="dt-navbar__link dt-navbar__link_nested">"Education" section</a></li>
+								<li><a href="#html_structure_portfolio" class="dt-navbar__link dt-navbar__link_nested">"Portfolio" section</a></li>
+								<li><a href="#html_structure_clients" class="dt-navbar__link dt-navbar__link_nested">"Clients" section</a></li>
+								<li><a href="#html_structure_pricing" class="dt-navbar__link dt-navbar__link_nested">"Pricing" section</a></li>
+								<li><a href="#html_structure_blog" class="dt-navbar__link dt-navbar__link_nested">"Blog" section</a></li>
+								<li><a href="#html_structure_text" class="dt-navbar__link dt-navbar__link_nested">"Text" section</a></li>
+								<li><a href="#html_structure_contacts" class="dt-navbar__link dt-navbar__link_nested">"Contacts" section</a></li>
+							</ul>
+						</li>
+						<li><a href="#icons" class="dt-navbar__link">Icons</a></li>
+						<li><a href="#credits" class="dt-navbar__link">Credits</a></li>
+					</ul>
+				</div>		
+			</nav>
+		</aside>	
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<div class="dt-section">
+				<h2 class="dt-title">mCard - Material vCard/CV/Resume HTML Template</h2>
+				<p>By:Olexandr Beshley</p>
+				<p>Thank you for your purchase. If you have any questions, mail me to - <a href="mailto:beshleygame@mail.ru">beshleygame@mail.ru</a></p>
+			</div>		
+			<article id="files_structure" class="dt-section">
+				<h2 class="dt-title">File structure</h2>
+				<p>After unpacking archive, you'll see this structure:</p>
+				<div class="dt-info-block">
+					<pre class="code language-html">
+						<code>
+html/
+│ 
+├──doc/
+├──theme_colors/		
+│──│──blue(orange, green, pink, purple, red)/
+│──│──│──css/
+│──│──│──│──animate.css
+│──│──│──│──basic.css
+│──│──│──│──layout.css
+│──│──│──│──ionicons.css
+│──│──│──│──magnific-popup.css
+│──│──│──│──owl.carousel.css
+│──│──│──fonts/
+│──│──│──images/
+│──│──│──js/
+│──│──│──│──main.js
+│──│──│──│──imagesloaded.pkgd.js
+│──│──│──│──jquery.min.js
+│──│──│──│──jquery.validate.js
+│──│──│──│──magnific-popup.js
+│──│──│──│──masonry.pkgd.js
+│──│──│──│──masonry-filter.js
+│──│──│──│──jquery.mb.YTPlayer.js
+│──│──│──│──owl.carousel.min.js
+│──│──│──│──particles.js
+│──│──│──│──particles-setting.js
+│──│──│──│──scrollreveal.js
+│──│──│──less/
+│──│──│──│──basic.less
+│──│──│──│──layout.less
+│──│──│──│──setting.less
+│──│──│──index-1.html
+│──│──│──index-1-particles.html
+│──│──│──index-1-video.html
+│──│──│──index-2.html
+│──│──│──index-2-particles.html
+│──│──│──index-2-video.html
+│──│──│──blog.html
+│──│──│──blog-page.html
+						</code>
+					</pre>
+				</div>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">css</span> - all CSS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">animate.css</span> - CSS for animations</li>
+							<li><span class="dt-label dt-label_bold">ionicons.css</span> - CSS for "ionicons" icons</li>
+							<li><span class="dt-label dt-label_bold">magnific-popup.css</span> - CSS for "Magnific Popup" plugin</li>
+							<li><span class="dt-label dt-label_bold">basic.css</span> - CSS for basic styles</li>
+							<li><span class="dt-label dt-label_bold">layout.css</span> - CSS for theme layout</li>
+							<li><span class="dt-label dt-label_bold">owl.carousel.css</span> - CSS for owl carousel</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">less</span> - all LESS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">setting.less</span> - LESS for setting theme</li>
+							<li><span class="dt-label dt-label_bold">basic.less</span> - LESS for basic styles</li>
+							<li><span class="dt-label dt-label_bold">layout.less</span> - LESS for theme layout</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">js</span> - all JS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">main.js</span> - Main JS for theme</li>
+							<li><span class="dt-label dt-label_bold">imagesloaded.pkgd.js</span> - JS plugin for masonry</li>
+							<li><span class="dt-label dt-label_bold">jquery.min.js</span> - jQuery library</li>
+							<li><span class="dt-label dt-label_bold">jquery.validate.js</span> - JS plugin for validate forms</li>
+							<li><span class="dt-label dt-label_bold">magnific-popup.js</span> - JS plugin for popups</li>
+							<li><span class="dt-label dt-label_bold">masonry.pkgd.js</span> - Masonry plugin for: "Portfolio" items</li>
+							<li><span class="dt-label dt-label_bold">masonry-filter.js</span> - Plugin for "Portfolio" filters</li>
+							<li><span class="dt-label dt-label_bold">jquery.mb.YTPlayer.js</span> - Plugin for Youtube Video Background</li>
+							<li><span class="dt-label dt-label_bold">owl.carousel.min.js</span> - Plugin for Owl Carousel</li>
+							<li><span class="dt-label dt-label_bold">particles.js</span> - Plugin for Particles Background</li>
+							<li><span class="dt-label dt-label_bold">particles-setting.js</span> - Plugin for setting Particles</li>
+							<li><span class="dt-label dt-label_bold">scrollreveal.js</span> - Plugin for animate blocks on scroll</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+			<article id="settings" class="dt-section">
+				<h2 class="dt-title">Settings</h2>
+				<p>
+					For editing the theme you can use following settings, folder "/less/setting.less" .
+				</p>
+
+				<table>
+					<thead>
+					<tr>
+						<th>Name</th>
+						<th>Value</th>
+						<th>Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Colors setting for theme elements</span></td>
+						</tr>
+						<tr>
+							<td>@default-color</td>
+							<td>#868686</td>
+							<td>Default color</td>
+						</tr>
+						<tr>
+							<td>@extra-color</td>
+							<td>rgba(0,0,0,0.2)</td>
+							<td>Extra color</td>
+						</tr>
+						<tr>
+							<td>@dark-color</td>
+							<td>#363636</td>
+							<td>Dark color</td>
+						</tr>
+						<tr>
+							<td>@light-color</td>
+							<td>#eee</td>
+							<td>Light color</td>
+						</tr>
+						<tr>
+							<td>@white-color</td>
+							<td>#fefefe</td>
+							<td>White color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#304fff</td>
+							<td>Theme color</td>
+						</tr>
+						<tr>
+							<td>@error-color</td>
+							<td>red</td>
+							<td>Error field color</td>
+						</tr>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Fonts setting for theme</span></td>
+						</tr>
+						<tr>
+							<td>@default-font</td>
+							<td>'Roboto'</td>
+							<td>Default font for Theme</td>
+						</tr>
+						<tr>
+							<td>@icons-font</td>
+							<td>'Ionicons'</td>
+							<td>Icons font for Theme</td>
+						</tr>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Sizes setting for theme</span></td>
+						</tr>
+						<tr>
+							<td>@large-size</td>
+							<td>17px</td>
+							<td>Large Size</td>
+						</tr>
+						<tr>
+							<td>@default-size</td>
+							<td>16px</td>
+							<td>Default Size</td>
+						</tr>
+						<tr>
+							<td>@small-size</td>
+							<td>14px</td>
+							<td>Small Size</td>
+						</tr>
+						<tr>
+							<td>@extra-small-size</td>
+							<td>13px</td>
+							<td>Extra Small Size</td>
+						</tr>
+						<tr>
+							<td>@title-size</td>
+							<td>42px</td>
+							<td>Title Size</td>
+						</tr>
+						<tr>
+							<td>@subtitle-size</td>
+							<td>16px</td>
+							<td>Subtitle Size</td>
+						</tr>
+						<tr>
+							<td>@h1-size</td>
+							<td>36px</td>
+							<td>H1 Size</td>
+						</tr>
+						<tr>
+							<td>@h2-size</td>
+							<td>32px</td>
+							<td>H2 Size</td>
+						</tr>
+						<tr>
+							<td>@h3-size</td>
+							<td>28px</td>
+							<td>H3 Size</td>
+						</tr>
+						<tr>
+							<td>@h4-size</td>
+							<td>24px</td>
+							<td>H4 Size</td>
+						</tr>
+						<tr>
+							<td>@h5-size</td>
+							<td>20px</td>
+							<td>H5 Size</td>
+						</tr>
+						<tr>
+							<td>@h6-size</td>
+							<td>16px</td>
+							<td>H6 Size</td>
+						</tr>
+						<tr>
+							<td>@large-icon-size</td>
+							<td>30px</td>
+							<td>Large icons size</td>
+						</tr>
+						<tr>
+							<td>@default-icon-size</td>
+							<td>24px</td>
+							<td>Default icons size</td>
+						</tr>
+						<tr>
+							<td>@extra-icon-size</td>
+							<td>21px</td>
+							<td>Extra icons size</td>
+						</tr>
+						<tr>
+							<td>@small-icon-size</td>
+							<td>16px</td>
+							<td>Small icons size</td>
+						</tr>
+						<tr>
+							<td>@default-letter-spacing</td>
+							<td>0.01em</td>
+							<td>Default Letter Spacing</td>
+						</tr>
+						<tr>
+							<td>@extra-letter-spacing</td>
+							<td>0.03em</td>
+							<td>Extra Letter Spacing</td>
+						</tr>
+						<tr>
+							<td>@line-height</td>
+							<td>25px</td>
+							<td>Default Line-height for text</td>
+						</tr>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Colors Theme</span></td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#304fff</td>
+							<td>Blue Theme color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#689f38</td>
+							<td>Green Theme color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#ef6c00</td>
+							<td>Orange Theme color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#ff4181</td>
+							<td>Pink Theme color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#9C27B0</td>
+							<td>Purple Theme color</td>
+						</tr>
+						<tr>
+							<td>@active-color</td>
+							<td>#ed3b3b</td>
+							<td>Red Theme color</td>
+						</tr>
+					</tbody>
+				</table>				
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Include of fonts</h2>
+				<p>To use fonts, you must add one tag 'link' from section below to head section.</p>
+				<pre class="code language-html">
+					<code>
+&lt;link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet"&gt;
+					</code>
+				</pre>	
+				<p>
+					Next step is to set the @default-font option with using settings table.
+				</p>				
+			</article>
+			<article id="conts" class="dt-section">
+				<h2 class="dt-title">Contact Form PHP</h2>
+				<p>To modify the form is submitted, you can use the following settings, folders "/mailer/form_setting.php" and "/mailer/feedback.php"</p>				
+			</article>
+			<article id="html_structure" class="dt-section">
+				<h2 class="dt-title">HTML structure</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	
+	&lt;!-- Basic --&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+	&lt;title&gt;mCard - Material vCard/CV/Resume HTML Template&lt;/title&gt;
+	&lt;meta name="description" content=""&gt;
+	&lt;meta name="keywords" content=""&gt;
+	
+	&lt;!-- Mobile Specific Metas --&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"&gt;
+	
+	&lt;!-- Load Fonts --&gt;
+	&lt;link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet"&gt;
+	
+	&lt;!-- CSS --&gt;
+	&lt;link rel="stylesheet" href="css/basic.css" /&gt;
+	&lt;link rel="stylesheet" href="css/layout.css" /&gt;
+	&lt;link rel="stylesheet" href="css/ionicons.css" /&gt;
+	&lt;link rel="stylesheet" href="css/owl.carousel.css" /&gt;
+	&lt;link rel="stylesheet" href="css/magnific-popup.css" /&gt;
+	&lt;link rel="stylesheet" href="css/animate.css" /&gt;
+	
+	&lt;!--[if lt IE 9]&gt;
+	&lt;script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"&gt;&lt;/script&gt;
+	&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	
+	&lt;!-- Favicon --&gt;
+	&lt;link rel="shortcut icon" href="images/favicons/favicon.ico"&gt;
+	
+&lt;/head&gt;
+
+&lt;body&gt;
+	
+	&lt;!-- Page --&gt;
+	&lt;div class="page" id="home-section"&gt;
+
+		&lt;!-- Preloader --&gt;
+		&lt;div class="preloader"&gt;
+			&lt;div class="centrize full-width"&gt;
+				&lt;div class="vertical-center"&gt;
+					&lt;div class="spinner"&gt;
+						&lt;div class="double-bounce1"&gt;&lt;/div&gt;
+						&lt;div class="double-bounce2"&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- Started Background --&gt;
+		&lt;div class="started-bg"&gt;
+			&lt;div id="particles-bg" class="slide" style="background-image: url(images/particles-bg.jpg);"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- Header --&gt;
+		&lt;header&gt;
+			&lt;div class="top-menu"&gt;
+				&lt;ul&gt;
+					&lt;li class="active"&gt;
+						&lt;a class="btn_animated" href="#home-section"&gt;&lt;span class="circle"&gt;Home&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#about-section"&gt;&lt;span class="circle"&gt;About&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#skills-section"&gt;&lt;span class="circle"&gt;Skills&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#experience-section"&gt;&lt;span class="circle"&gt;Experience&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#service-section"&gt;&lt;span class="circle"&gt;Services&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#education-section"&gt;&lt;span class="circle"&gt;Education&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#works-section"&gt;&lt;span class="circle"&gt;Portfolio&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#clients-section"&gt;&lt;span class="circle"&gt;Clients&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#pricing-section"&gt;&lt;span class="circle"&gt;Pricing&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#blog-section"&gt;&lt;span class="circle"&gt;Blog&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a class="btn_animated" href="#contact-section"&gt;&lt;span class="circle"&gt;Contact Me&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;a href="#" class="menu-btn"&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/header&gt;
+		
+		&lt;!-- Container --&gt;
+		&lt;div class="container"&gt;
+
+			&lt;!-- Wrapper --&gt;
+			&lt;div class="wrapper"&gt;
+				
+			&lt;/div&gt;
+
+			&lt;!-- Footer --&gt;
+			&lt;footer&gt;
+				&lt;div class="copy"&gt;© 2016 mCard. All rights reserved.&lt;/div&gt;
+			&lt;/footer&gt;
+			
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+	
+	&lt;!-- jQuery Scripts --&gt;
+    &lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/owl.carousel.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.validate.js"&gt;&lt;/script&gt;
+	&lt;script src="js/magnific-popup.js"&gt;&lt;/script&gt;
+	&lt;script src="js/masonry.pkgd.js"&gt;&lt;/script&gt;
+	&lt;script src="js/imagesloaded.pkgd.js"&gt;&lt;/script&gt;
+	&lt;script src="js/masonry-filter.js"&gt;&lt;/script&gt;
+	&lt;script src="js/scrollreveal.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.mb.YTPlayer.js"&gt;&lt;/script&gt;
+	&lt;script src="js/particles.js"&gt;&lt;/script&gt;
+	&lt;script src="js/particles-setting.js"&gt;&lt;/script&gt;
+
+	&lt;!-- Google map api --&gt;
+	&lt;script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"&gt;&lt;/script&gt;
+	
+	&lt;!-- Main Scripts --&gt;
+	&lt;script src="js/main.js"&gt;&lt;/script&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="html_structure_started" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Started" section</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Started --&gt;
+&lt;div class="section started"&gt;
+	&lt;div class="st-box"&gt;
+		&lt;div class="st-bts"&gt;
+			&lt;a href="mailto:smorgan@domain.com" class="btn_animated"&gt;
+				&lt;span class="circle"&gt;&lt;i class="icon ion ion-plus"&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class="st-image"&gt;&lt;img src="images/man.png" alt="" /&gt;&lt;/div&gt;
+		&lt;div class="st-title"&gt;Steve Morgan&lt;/div&gt;
+		&lt;div class="st-subtitle"&gt;UX/UI Designer & Front-end Developer&lt;/div&gt;
+		&lt;div class="st-soc"&gt;
+			&lt;a target="blank" href="https://www.facebook.com/" class="btn_animated"&gt;
+				&lt;span class="circle"&gt;&lt;i class="icon ion ion-social-facebook"&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;/a&gt;
+			&lt;a target="blank" href="https://github.com/" class="btn_animated"&gt;
+				&lt;span class="circle"&gt;&lt;i class="icon ion ion-social-github"&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;/a&gt;
+			&lt;a target="blank" href="https://twitter.com/" class="btn_animated"&gt;
+				&lt;span class="circle"&gt;&lt;i class="icon ion ion-social-twitter"&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;/a&gt;
+			&lt;a href="skype:smorgan" class="btn_animated"&gt;
+				&lt;span class="circle"&gt;&lt;i class="icon ion ion-social-skype"&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;/a&gt;
+			&lt;a target="blank" href="https://plus.google.com/" class="btn_animated"&gt;
+				&lt;span class="circle"&gt;&lt;i class="icon ion ion-social-googleplus"&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="html_structure_about" class="dt-section">
+				<h2 class="dt-title">HTML structure of "About" section</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section About --&gt;
+&lt;div class="section about" id="about-section"&gt;
+	&lt;div class="content-box"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col col-m-12 col-t-5 col-d-5"&gt;
+				&lt;div class="info-list"&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;strong&gt;&lt;span&gt;Age:&lt;/span&gt;&lt;/strong&gt; 22 Years&lt;/li&gt;
+						&lt;li&gt;&lt;strong&gt;&lt;span&gt;Job:&lt;/span&gt;&lt;/strong&gt; Freelancer&lt;/li&gt;
+						&lt;li&gt;&lt;strong&gt;&lt;span&gt;Citizenship:&lt;/span&gt;&lt;/strong&gt; United States&lt;/li&gt;
+						&lt;li&gt;&lt;strong&gt;&lt;span&gt;Address:&lt;/span&gt;&lt;/strong&gt; 358 W Jefferson St, Bensenville, IL 60112&lt;/li&gt;
+						&lt;li&gt;&lt;strong&gt;&lt;span&gt;Phone:&lt;/span&gt;&lt;/strong&gt; &lt;a href="tel:12562548456"&gt;+1 256 254 84 56&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;strong&gt;&lt;span&gt;E-mail:&lt;/span&gt;&lt;/strong&gt; &lt;a href="mailto:smorgan@domain.com"&gt;smorgan@domain.com&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="col col-m-12 col-t-7 col-d-7"&gt;
+				&lt;div class="text-box"&gt;
+					&lt;p&gt;&lt;strong&gt;Hello! I’m Steve Morgan&lt;/strong&gt;&lt;/p&gt;
+					&lt;p&gt;
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+						eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+						voluptatem quia voluptas sit aspernatur aut odit aut fugit. Sed ut perspiciatis unde omnis iste natus error sit 
+						voluptatem accusantium doloremque.
+					&lt;/p&gt;
+					&lt;p&gt;
+						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+					&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class="bts"&gt;
+					&lt;a href="#" class="btn btn_animated"&gt;&lt;span class="circle"&gt;Download CV&lt;/span&gt;&lt;/a&gt;
+					&lt;a href="#" class="btn extra contact-btn btn_animated"&gt;&lt;span class="circle"&gt;Contact Me&lt;/span&gt;&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="html_structure_skills" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Skills" section</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Skills --&gt;
+&lt;div class="section skills" id="skills-section"&gt;
+	&lt;div class="title"&gt;Skills&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col col-m-12 col-t-6 col-d-6"&gt;
+			&lt;div class="content-box animated"&gt;
+				&lt;div class="i_title"&gt;
+					&lt;div class="icon"&gt;&lt;i class="icon ion ion-gear-b"&gt;&lt;/i&gt;&lt;/div&gt;
+					&lt;div class="name"&gt;Professional&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="skills"&gt;
+					&lt;ul&gt;
+						&lt;li&gt; 
+							&lt;div class="name"&gt;UI/UX Design&lt;/div&gt;
+							&lt;div class="progress"&gt;
+								&lt;div class="percentage" style="width:78%;"&gt;
+									&lt;span class="percent"&gt;&lt;i class="icon ion ion-ios-checkmark-empty"&gt;&lt;/i&gt;&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+						...
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="col col-m-12 col-t-6 col-d-6"&gt;
+			&lt;div class="content-box animated"&gt;
+				&lt;div class="i_title"&gt;
+					&lt;div class="icon"&gt;&lt;i class="icon ion ion-person"&gt;&lt;/i&gt;&lt;/div&gt;
+					&lt;div class="name"&gt;Personal&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="skills"&gt;
+					&lt;ul&gt;
+						&lt;li&gt; 
+							&lt;div class="name"&gt;Communication&lt;/div&gt;
+							&lt;div class="progress"&gt;
+								&lt;div class="percentage" style="width:78%;"&gt;
+									&lt;span class="percent"&gt;&lt;i class="icon ion ion-ios-checkmark-empty"&gt;&lt;/i&gt;&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+						...
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="html_structure_experience" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Experience" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Experience --&gt;
+&lt;div class="section experience" id="experience-section"&gt;
+	&lt;div class="title"&gt;
+		Experience
+		&lt;span class="circle"&gt;&lt;i class="icon ion ion-ios-briefcase"&gt;&lt;/i&gt;&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="cd-timeline"&gt;
+		&lt;div class="cd-timeline-block animated"&gt;
+			&lt;div class="cd-timeline-point"&gt;
+				&lt;i class="icon ion ion-ios-checkmark-empty"&gt;&lt;/i&gt;
+			&lt;/div&gt;
+			&lt;div class="cd-timeline-content"&gt;
+				&lt;div class="content-box"&gt;
+					&lt;div class="date"&gt;2013-2016&lt;/div&gt;
+					&lt;div class="name"&gt;Facebook Inc.&lt;/div&gt;
+					&lt;div class="category"&gt;Art Director&lt;/div&gt;
+					&lt;p&gt;
+						Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cule dicta iriure at. Ubique 
+						maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates 
+						sapientem sed, pri zril ubique ut. Lorem ipsum dolor sit amet, in quodsi.
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="html_structure_service" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Service" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Service --&gt;
+&lt;div class="section service" id="service-section"&gt;
+	&lt;div class="title"&gt;Services&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col col-m-12 col-t-6 col-d-6"&gt;
+			&lt;div class="content-box animated"&gt;
+				&lt;div class="i_title"&gt;
+					&lt;div class="icon"&gt;&lt;i class="icon ion ion-android-color-palette"&gt;&lt;/i&gt;&lt;/div&gt;
+					&lt;div class="name"&gt;UI/UX Design&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis 
+					lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum venenatis vestibulum elit ultricies. Lorem ipsum dolor 
+					sit amet, consectetur adipiscing elit.
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="col col-m-12 col-t-6 col-d-6"&gt;
+			&lt;div class="content-box animated"&gt;
+				&lt;div class="i_title"&gt;
+					&lt;div class="icon"&gt;&lt;i class="icon ion ion-social-chrome"&gt;&lt;/i&gt;&lt;/div&gt;
+					&lt;div class="name"&gt;Web Application&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis 
+					lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum venenatis vestibulum elit ultricies. Lorem ipsum dolor 
+					sit amet, consectetur adipiscing elit.
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	...
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_education" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Education" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Education --&gt;
+&lt;div class="section education" id="education-section"&gt;
+	&lt;div class="title"&gt;
+		Education
+		&lt;span class="circle"&gt;&lt;i class="icon ion ion-university"&gt;&lt;/i&gt;&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="cd-timeline"&gt;
+		&lt;div class="cd-timeline-block animated"&gt;
+			&lt;div class="cd-timeline-point"&gt;
+				&lt;i class="icon ion ion-ios-checkmark-empty"&gt;&lt;/i&gt;
+			&lt;/div&gt;
+			&lt;div class="cd-timeline-content"&gt;
+				&lt;div class="content-box"&gt;
+					&lt;div class="date"&gt;2002-2004&lt;/div&gt;
+					&lt;div class="name"&gt;Art University&lt;/div&gt;
+					&lt;div class="category"&gt;New York&lt;/div&gt;
+					&lt;p&gt;
+						Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cule dicta iriure at. Ubique 
+						maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates 
+						sapientem sed, pri zril ubique ut.
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_portfolio" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Portfolio" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Portfolio --&gt;
+&lt;div class="section works" id="works-section"&gt;
+	&lt;div class="title"&gt;Portfolio&lt;/div&gt;
+	&lt;div class="filter-menu"&gt;
+		&lt;div class="filters"&gt;
+			&lt;div class="btn-group"&gt;
+				&lt;div class="f_btn btn_animated active"&gt;
+					&lt;div class="circle"&gt;
+						&lt;label&gt;&lt;input type="radio" name="fl_radio" value="box-item" /&gt;All&lt;/label&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				...
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="row box-items"&gt;
+		&lt;div class="col col-m-12 col-t-6 col-d-4 box-item f-mockup animated"&gt;
+			&lt;div class="image"&gt;
+				&lt;a href="#popup-1" class="has-popup"&gt;&lt;img src="images/works/work1.jpg" alt="" /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class="content-box"&gt;
+				&lt;div class="category"&gt;Mockups&lt;/div&gt;
+				&lt;a href="#popup-1" class="name has-popup"&gt;Realistic Business Cards MockUp&lt;/a&gt;
+				&lt;p&gt;
+					Here’s a new b-cards mock-up with several business cards...
+				&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div id="popup-1" class="popup-box mfp-fade mfp-hide"&gt;
+				&lt;div class="content"&gt;
+					&lt;div class="image"&gt;
+						&lt;img src="images/works/work1.jpg" alt=""&gt;
+					&lt;/div&gt;
+					&lt;div class="desc"&gt;
+						&lt;div class="category"&gt;Mockups&lt;/div&gt;
+						&lt;h4&gt;Realistic Business Cards MockUp&lt;/h4&gt;
+						&lt;p&gt;
+							Here’s a new b-cards mock-up with several business cards scattered across the scene. The PSD file allows you 
+							to easily. Here’s a new b-cards mock-up with several business cards scattered across the scene.
+						&lt;/p&gt;
+						&lt;a href="#" class="btn btn_animated"&gt;&lt;span class="circle"&gt;View Project&lt;/span&gt;&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+	&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_clients" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Clients" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Clients --&gt;
+&lt;div class="section clients" id="clients-section"&gt;
+	&lt;div class="title"&gt;Clients&lt;/div&gt;
+	&lt;div class="reviews-carousel animated"&gt;
+		&lt;div class="owl-carousel"&gt;
+			&lt;div class="item"&gt;
+				&lt;div class="content-box"&gt;
+					&lt;div class="reviews-item"&gt;
+						&lt;div class="image"&gt;&lt;img src="images/clients/rev1.jpg" alt="" /&gt;&lt;/div&gt;
+						&lt;div class="name"&gt;— Robert Chase, CEO&lt;/div&gt;
+						&lt;p&gt;
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod 
+							iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum venenatis vestibulum elit ultricies. 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod 
+							iaculis lobortis."
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			...
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_pricing" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Pricing" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Pricing --&gt;
+&lt;div class="section pricing" id="pricing-section"&gt;
+	&lt;div class="title"&gt;Pricing&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col col-m-12 col-t-6 col-d-3"&gt;
+			&lt;div class="content-box animated"&gt;
+				&lt;div class="pricing-table"&gt;
+					&lt;div class="i_title"&gt;
+						&lt;div class="icon"&gt;&lt;i class="icon ion ion-battery-empty"&gt;&lt;/i&gt;&lt;/div&gt;
+						&lt;div class="pt-title"&gt;Basic&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="pt-amount"&gt;
+						&lt;span class="dollar"&gt;$&lt;/span&gt;
+						&lt;span class="amount"&gt;15&lt;/span&gt;
+						&lt;span class="period"&gt;/hr&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;div class="pt-feature-list"&gt;
+						&lt;ul&gt;
+							&lt;li class="disable"&gt;UI/UX Design&lt;/li&gt;
+							&lt;li&gt;Web Development&lt;/li&gt;
+							&lt;li class="disable"&gt;IOS Application &lt;strong&gt;New&lt;/strong&gt;&lt;/li&gt;
+							&lt;li class="disable"&gt;Android Application&lt;/li&gt;
+							&lt;li class="disable"&gt;Writing&lt;/li&gt;
+							&lt;li class="disable"&gt;Photography &lt;strong&gt;New&lt;/strong&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;a href="#" class="btn btn_animated"&gt;&lt;span class="circle"&gt;Buy Now&lt;/span&gt;&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_blog" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Blog" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Blog --&gt;
+&lt;div class="section blog" id="blog-section"&gt;
+	&lt;div class="title"&gt;Blog&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col col-m-12 col-t-6 col-d-6"&gt;
+			&lt;div class="blog_item animated"&gt;
+				&lt;div class="image"&gt;
+					&lt;a href="#"&gt;&lt;img src="images/blog/blog1.jpg" alt="" /&gt;&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class="content-box"&gt;
+					&lt;div class="i_title"&gt;
+						&lt;div class="icon"&gt;&lt;strong&gt;27&lt;/strong&gt; July&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="category_bts"&gt;
+						&lt;a href="#" class="category"&gt;#branding&lt;/a&gt;
+						&lt;a href="#" class="category"&gt;#ui-ux&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;a href="blog_inner.html" class="name"&gt;Music Player Design&lt;/a&gt;
+					&lt;p&gt;
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis 
+						lobortis. Vestibulum posuere molestie ipsum vel...
+					&lt;/p&gt;
+					&lt;a href="#" class="btn btn_animated"&gt;&lt;span class="circle"&gt;Read more&lt;/span&gt;&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_text" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Text" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Text --&gt;
+&lt;div class="section ceo_text"&gt;
+	&lt;div class="title"&gt;Text Section&lt;/div&gt;
+	&lt;div class="content-box animated"&gt;
+		&lt;div class="text-box"&gt;
+			&lt;p&gt;
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+				eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+				voluptatem quia voluptas sit aspernatur aut odit aut fugit. Sed ut perspiciatis unde omnis iste natus error sit 
+				voluptatem accusantium doloremque.
+			&lt;/p&gt;
+			&lt;p&gt;
+				Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+			&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_contacts" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Contacts" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Contacts --&gt;
+&lt;div class="section contacts" id="contact-section"&gt;
+	&lt;div class="title"&gt;Contact Me&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col col-m-12 col-t-6 col-d-6"&gt;
+			&lt;div class="content-box animated"&gt;
+				&lt;div class="info-list"&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;strong&gt;&lt;span&gt;Address:&lt;/span&gt;&lt;/strong&gt; 358 W Jefferson St, Bensenville, IL 60112&lt;/li&gt;
+						&lt;li&gt;&lt;strong&gt;&lt;span&gt;Phone:&lt;/span&gt;&lt;/strong&gt; &lt;a href="tel:12562548456"&gt;+1 256 254 84 56&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;strong&gt;&lt;span&gt;E-mail:&lt;/span&gt;&lt;/strong&gt; &lt;a href="mailto:smorgan@domain.com"&gt;smorgan@domain.com&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div class="map" id="map"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="col col-m-12 col-t-6 col-d-6"&gt;
+			&lt;div class="content-box animated"&gt;
+				&lt;h4&gt;Write a message:&lt;/h4&gt;
+				&lt;div class="contact-form"&gt;
+					&lt;form id="cform" method="post"&gt;
+						&lt;div class="group-val"&gt;
+							&lt;input type="text" name="name" placeholder="Your Name" /&gt;
+						&lt;/div&gt;
+						&lt;div class="group-val"&gt;
+							&lt;input type="text" name="email" placeholder="Your Email" /&gt;
+						&lt;/div&gt;
+						&lt;div class="group-val"&gt;
+							&lt;input type="text" name="subject" placeholder="Subject" /&gt;
+						&lt;/div&gt;
+						&lt;div class="group-val ct-gr"&gt;
+							&lt;textarea name="message" placeholder="Message"&gt;&lt;/textarea&gt;
+						&lt;/div&gt;
+						&lt;a href="#" class="btn btn_animated" onclick="$('#cform').submit(); return false;"&gt;&lt;span class="circle"&gt;Send Message&lt;/span&gt;&lt;/a&gt;
+					&lt;/form&gt;
+					&lt;div class="alert-success"&gt;
+						&lt;p&gt;Thanks, your message is sent successfully. We will contact you shortly!&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="icons" class="dt-section">
+				<h2 class="dt-title">Icons</h2>
+				<p>
+					In this theme are defined some of classes for icons, your can see all icons here - http://ionicons.com/.
+				</p>
+			</article>
+			<article id="credits" class="dt-section">
+				<h2 class="dt-title">Sourse & Credits</h2>
+				<h3>Scripts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Animate.css</span> <a target="_blank" href="https://daneden.github.io/animate.css/">https://daneden.github.io/animate.css/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery</span> <a target="_blank" href="https://jquery.com/">https://jquery.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Masonry</span> <a target="_blank" href="http://masonry.desandro.com/">http://masonry.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">imagesLoaded</span> <a target="_blank" href="http://imagesloaded.desandro.com/">http://imagesloaded.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Multiple Filter Masonry</span> <a target="_blank" href="http://dynamick.github.io/multiple-filter-masonry/">http://dynamick.github.io/multiple-filter-masonry/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery Validation Plugin</span> <a target="_blank" href="http://jqueryvalidation.org/">http://jqueryvalidation.org/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Magnific Popup</span> <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jquery.mb.YTPlayer</span> <a target="_blank" href="https://github.com/pupunzi/jquery.mb.YTPlayer">https://github.com/pupunzi/jquery.mb.YTPlayer</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Owl Carousel</span> <a target="_blank" href="http://owlgraphic.com/owlcarousel/">http://owlgraphic.com/owlcarousel/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Particles.js</span> <a target="_blank" href="https://github.com/VincentGarreau/particles.js/">https://github.com/VincentGarreau/particles.js/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Scrollreveal</span> <a target="_blank" href="https://github.com/jlmakes/scrollreveal">https://github.com/jlmakes/scrollreveal</a>
+					</li>
+				</ul>
+				<h3>Fonts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Roboto</span> <a target="_blank" href="https://www.google.com/fonts/specimen/Roboto">https://www.google.com/fonts/specimen/Roboto</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Ionicons</span> <a target="_blank" href="http://ionicons.com/">http://ionicons.com/</a>
+					</li>
+				</ul>
+				<h3>Images</h3>
+				<p>Any Images or logos used in previews are not included in this item or final purchase.</p>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Unsplash</span> <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Graphicburger</span> <a target="_blank" href="http://graphicburger.com/">http://graphicburger.com/</a>
+					</li>
+				</ul>
+			</article>		
+		</div>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script> 
+</body>
+</html>

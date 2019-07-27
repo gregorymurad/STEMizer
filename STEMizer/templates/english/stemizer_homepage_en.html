@@ -1,0 +1,272 @@
+{% extends "stemizer_homepage.html" %}
+
+
+		<!-- Started Background -->
+		<div class="started-bg">
+			<div class="slide" style="background-image: url(../../static/vita/images/works/school.jpg);"></div>
+		</div>
+		<!-- Header -->
+		<header>
+			<div class="top-menu">
+				<ul>
+					<li class="active">
+						<a class="btn_animated" href="#home-section"><span class="circle">Home</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#about-section"><span class="circle">Book 1</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#skills-section"><span class="circle">Book 2</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#experience-section"><span class="circle">Book 3</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="{{ url_for('chapter4') }}"><span class="circle">Book 4</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#works-section"><span class="circle">Book 5</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#works-section"><span class="circle">Book 6</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#clients-section"><span class="circle">Book 7</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#pricing-section"><span class="circle">Book 8</span></a>
+					</li>
+					<li>
+						<a class="btn_animated" href="#blog-section"><span class="circle">Book 9</span></a>
+					</li>
+                    <li>
+						<a class="btn_animated" href="#blog-section"><span class="circle">Book 10</span></a>
+					</li>
+                    <li>
+						<a class="btn_animated" href="#blog-section"><span class="circle">Book 11</span></a>
+					</li>
+                    <li>
+						<a class="btn_animated" href="#blog-section"><span class="circle">Book 12</span></a>
+					</li>
+                    {% if current_user.is_authenticated %}
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('account') }}"><span class="circle">Account</span></a>
+					    </li>
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('logout') }}"><span class="circle">Logout</span></a>
+					    </li>
+                    {% else %}
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('login') }}"><span class="circle">Login</span></a>
+					    </li>
+                        <li>
+						    <a class="btn_animated" href="{{ url_for('register') }}"><span class="circle">Register</span></a>
+					    </li>
+                    {% endif %}
+
+				</ul>
+				<a href="#" class="menu-btn"><span></span></a>
+			</div>
+		</header>
+    </div>
+			<!-- Wrapper -->
+			<div class="wrapper">
+
+				<div class="blog-single content-box">
+					<div class="row">
+						<div class="col col-m-12 col-t-12 col-d-12">
+
+							<div class="text-box">
+
+								<h1>Welcome to STEMizer</h1>
+								<div class="blog-detail">Integrating STEM <span>into people's life</span></div>
+
+								<!--<div class="blog-image">
+									<img src="../../static/vita/images/blog/blog1.jpg" alt="">
+								</div>-->
+
+								<div class="blog-content">
+
+
+            <p class="lead mb-2">An online educational tool to apply Robotics concepts into STEM fields</p>
+
+            <p> As Robotics grows rapidly with the advent of big data and the Internet of Things (IoT), it is necessary for people to study it as early in their education as possible. For example,
+                it becomes essential to undestand how sensors that are mounted on a vehicle process thousands of data points each second; how autonomous vehicle do not hit obstacles as the move;
+                how information collected by a robot is read on a mobile or web application in user-friendly manner. Therefore, it is imperative that Robotics becomes part of the K-12 curriculum, and STEMizer is a way
+                to incorporate Robotics and applications into the curriculum in hands-on and creative way, enticing students to ask questions, enhancing creativity and promoting a
+                By the end of high schools, students will be able to create four-legged robots that can help change the world with virtual reality data mapping and even more.
+            </p>
+            <p>
+                This adaptive curriculum also introduces students to multiple areas, such as machine learning, artificial intelligence, data science, design and engineering
+            </p>
+                <blockquote>
+                    All the modules were developed following the school's curricula so the students will never get lost when mathematical concepts are required; instead, students will reinforce their math knowledge through challenging and fun exercises.
+                </blockquote>
+                <p>
+                    If needed, STEMizer is also flexible enough to be adapted to the context of each school. Teachers have to ability to move modules back and forth to ensure quality instruction that meets the educational requirements and standards.
+                </p>
+                <ul class="list-style">
+                    <li> It is fully adaptable to the school's educational structure and policies</li>
+                    <li> Interactive design that promotes collaboration and teamwork</li>
+                    <li> Engaging environment for learning and doing experiments</li>
+                    <li> Exercises adapted to several modern robotic platform (VEX, Arduino, Raspberry PI and Sphero)</li>
+                    <li> Long distance access to one of the most technological educational robotics laboratory so students can send their codes and watch in real time the robot executing the commands</li>
+                </ul>
+
+ <h1>Meet our team / Conheça nossa equipe</h1>
+
+                <table width="500" border="0">
+
+                <tr>
+
+                <td align="center" valign="center" col width="100">
+                <img src="static/img/alysson.jpeg" alt="description here" class="image2"/>
+                </td>
+
+                <td align="center" valign="center" col width="100">
+                <img src="static/img/giri.jpg" alt="description here" class="image2"/>
+                </td>
+
+                <td align="center" valign="center" col width="100">
+                <img src="static/img/greg.jpg" alt="description here" class="image2"/>
+                </td>
+
+                <td align="center" valign="center" col width="100">
+                <img src="static/img/leandro.jpg" alt="description here" class="image2"/>
+                </td>
+
+                <td align="center" valign="center" col width="100">
+                <img src="static/img/vania.jpeg" alt="description here" class="image2"/>
+                </td>
+
+                </tr>
+
+                <tr>
+
+                <td align="center" valign="center" col width="100">
+                <strong>Alysson Carvalho, Ph.D.</strong>
+                </td>
+
+                <td align="center" valign="center" col width="100">
+                <strong>Giri Narasimhan, Ph.D.</strong>
+                </td>
+
+                <td align="center" valign="center" col width="100">
+                <strong>Gregory Reis, Ph.D.</strong>
+                </td>
+
+                <td align="center" valign="center" col width="100">
+                <strong>Leandro Boari</strong>
+                </td>
+
+                <td align="center" valign="center" col width="100">
+                <strong>Vânia Rufini</strong>
+                </td>
+
+                </tr>
+
+                <tr>
+
+                <td col width="100">
+                Pedagogist, Developmental Psychologist and Neuropsychologist
+                </td>
+
+                <td col width="100">
+                Data Scientist and Bioinformatics Specialist
+                </td>
+
+                <td col width="100">
+                Computer Scientist
+                </td>
+
+                <td col width="100">
+                Roboticist and Automation Engineer
+                </td>
+
+                <td col width="100">
+                Mathematics Specialist and Educator
+                </td>
+
+                </tr>
+
+                </table>
+
+                <!--<div class="row">
+                  <div class="column">
+                    <img src="static/img/alysson.jpeg" alt="Snow"  class="image2">
+                      <figcaption><small>Pedagogy, Education, <br>Curriculum, Developmental Psychology <br>and Neuropsychology</small></figcaption>
+                      <img src="static/img/giri.jpg" alt="Forest"  class="image2">
+                      <figcaption>Algorithms, Bioinformatics, and Data Science</figcaption>
+                    <img src="static/img/greg.jpg" alt="Mountains"  class="image2">
+                      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    <img src="static/img/leandro.jpg" alt="Mountains"  class="image2">
+                      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    <img src="static/img/vania.jpeg" alt="Mountains" class="image2">
+                      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                  </div>
+                </div>-->
+
+
+
+                <!--<img src="static/img/alysson.jpeg" alt="Avatar" class="image2" >
+                <img src="static/img/giri.jpg" alt="Avatar" class="image2">
+                <img src="static/img/greg.jpg" alt="Avatar" class="image2">
+                <img src="static/img/leandro.jpg" alt="Avatar" class="image2">
+                <img src="static/img/vania.jpeg" alt="Avatar" class="image2">-->
+
+                <div class="post-lightbox row">
+                    <a href="../../static/vita/images/works/book1.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book1.jpg" alt="">
+                    </a>
+                    <a href="../../static/vita/images/works/book2.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book2.jpg" alt="">
+                    </a>
+                    <a href="../../static/vita/images/works/book3.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="post-lightbox row">
+                    <a href="../../static/vita/images/works/book4.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book4.jpg" alt="">
+                    </a>
+                    <a href="../../static/vita/images/works/book5.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book5.jpg" alt="">
+                    </a>
+                    <a href="../../static/vita/images/works/book6.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book6.jpg" alt="">
+                    </a>
+                </div>
+                <div class="post-lightbox row">
+                    <a href="../../static/vita/images/works/book7.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book7.jpg" alt="">
+                    </a>
+                    <a href="../../static/vita/images/works/book8.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book8.jpg" alt="">
+                    </a>
+                    <a href="../../static/vita/images/works/book9.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book9.jpg" alt="">
+                    </a>
+                </div>
+                <div class="post-lightbox row">
+                    <a href="../../static/vita/images/works/book10.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book10.jpg" alt="">
+                    </a>
+                    <a href="../../static/vita/images/works/book11.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book11.jpg" alt="">
+                    </a>
+                    <a href="../../static/vita/images/works/book12.jpg" class="col col-m-12 col-t-4 col-d-4 lightbox-image">
+                    <img src="../../static/vita/images/works/book12.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+{% endblock %}

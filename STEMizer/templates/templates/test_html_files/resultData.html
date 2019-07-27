@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+   <body>
+
+    <a href="/survey"><input type="button" value="Go Back"></a>
+    <table width="500" border="1" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Camera Used</th>
+                <th>Image</th>
+                <th>ID</th>
+            <tr>
+        </thead>
+        <tbody>
+            {% for i in result %}
+
+
+                <tr>
+                    <td align="center" valign="center">
+                        {{ i["camera"]["full_name"] }}
+                    </td>
+                    <td align="center" valign="center">
+                        <img src={{ i["img_src"] }} alt="mars.jpl.nasa.gov/" style="width:208px;height:284px;">
+                        <br />
+                    </td>
+                    <td align="center" valign="center">
+                        {{ i["id"] }}
+                        <br />
+                    </td>
+                </tr>
+
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    <a href="/survey"><input type="button" value="Go Back"></a>
+
+   </body>
+</html>

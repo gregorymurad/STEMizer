@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>API Class</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../../../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="../../../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="../../../static/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../../../static/css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+
+
+            {% for message in form.name.errors %}
+                <div>{{ message }}</div>
+            {% endfor %}
+            <form method="POST" action="{{url_for('greetings')}}">
+            {{ form.csrf }}
+            <div class="form-group">
+                {{ form.name.label }}<br>
+               {{ form.name }}<br><br>
+                {{ form.age.label }}<br>
+               {{ form.age }}<br><br>
+                 {{ form.camera.label }}<br>
+               {{ form.camera }}<br><br>
+            </div>
+
+
+            <!--Submit button for getting the query for recalls-->
+            <input type="submit" value="Search">
+        </form>
+
+        <form method="GET" action="{{url_for('greetings')}}">
+        {% if name %}
+          <h1>{{name}} says: </h1>
+          {% endif %}
+        </form>
+
+
+
+
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="/">Return</a>
+        </div>
+        <br>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

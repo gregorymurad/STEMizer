@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  </head>
+ <title>CBSD</title>
+
+
+
+  <!-- Bootstrap Core CSS -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="static/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="static/css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body id="page-top">
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                    {{ message }}
+                    </div>
+
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+
+
+
+  {% block content %}
+
+        <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Menu</a>
+      </li>
+{#      <li class="sidebar-nav-item">#}
+{#        <a class="js-scroll-trigger" href="{{ url_for('login') }}">Log In</a>#}
+{#      </li>#}
+{#      <li class="sidebar-nav-item">#}
+{#        <a class="js-scroll-trigger" href="{{ url_for('register') }}">Enroll Now</a>#}
+{#      </li>#}
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">Topics</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#lectures">Lectures</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="{{ url_for('home') }}">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+
+        <!-- Header -->
+{#  <header class="masthead d-flex">#}
+{#    <div class="container text-center my-auto">#}
+{#      <h1 class="mb-1">Component-Based Software Development</h1>#}
+{#      <h3 class="mb-5">#}
+{#        <em>Gregory M Reis, PhD</em>#}
+{#      </h3>#}
+{#      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>#}
+{#    </div>#}
+{#    <div class="overlay"></div>#}
+{#  </header>#}
+
+  <!-- About -->
+{#  <section class="content-section bg-light" id="about">#}
+{#    <div class="container text-center">#}
+{#      <div class="row">#}
+{#        <div class="col-lg-10 mx-auto">#}
+{#          <h1> Gregory M. Reis</h1>#}
+{#           <p class="lead mb-4">Ph.D. in Computer Science</p>#}
+{#          <p class="lead mb-5">This goal of this website is to display my academic and projects portfolio</p>#}
+{#          <a class="btn btn-dark btn-xl js-scroll-trigger btn-blockr" href="/teaching">Teaching Experience</a>#}
+{#          <a class="btn btn-dark btn-xl js-scroll-trigger btn-blockr" href="https://scholar.google.com/citations?user=6MPWyYsAAAAJ&hl=en">Publications</a>#}
+{#            <a class="btn btn-dark btn-xl js-scroll-trigger btn-blockr" href="/cbsd">Projects</a>#}
+{#            <a class="btn btn-dark btn-xl js-scroll-trigge btn-blockr" href="http://people.cis.fiu.edu/greis/">Full CV</a>#}
+{#        </div>#}
+{##}
+{#      </div>#}
+{##}
+{#   <br><br><br>#}
+{#        <p class="align-content-md-center"><strong>Contact Information:</strong></p>#}
+{#        <p class="mb-2">gregory@cs.fiu.edu</p>#}
+{#        <p class="mb-2">+1 (305) 348-7852</p>#}
+{#        <p class="mb-0">11200 S.W. 8th Street, CASE 243-D, Miami, FL 33199</p>#}
+{#    </div>#}
+{##}
+{#  </section>#}
+
+
+        <!-- Callout -->
+  <section class="callout" id="projects">
+<div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 white mx-auto">
+          <h1> Gregory M. Reis</h1>
+           <p class="text-white font-weight-bold">Ph.D. in Computer Science</p>
+{#          <p class="lead mb-5">This website is intended to display my academic and projects portfolio</p>#}
+          <a class="btn btn-dark btn-xl js-scroll-trigger btn-blockr" href="/teaching">Teaching</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger btn-blockr" href="https://scholar.google.com/citations?user=6MPWyYsAAAAJ&hl=en">Publications</a>
+            <a class="btn btn-dark btn-xl js-scroll-trigger btn-blockr" href="/cbsd">Projects</a>
+            <a class="btn btn-dark btn-xl js-scroll-trigge btn-blockr" href="{{ url_for('vita') }}">Vita</a>
+        </div>
+
+      </div>
+
+   <br><br><br>
+        <p class="align-content-md-center"><strong>Contact Information:</strong></p>
+        <p class="text-white font-weight-bold">gregory@cs.fiu.edu</p>
+        <p class="text-white font-weight-bold">+1 (305) 348-7852</p>
+        <p class="text-white font-weight-bold">11200 S.W. 8th Street, CASE 243-D, Miami, FL 33199</p>
+    </div>
+  </section>
+
+{#  <!-- Services -->#}
+{#  <section class="content-section bg-primary text-white text-center" id="services">#}
+{#    <div class="container">#}
+{#      <div class="content-section-heading">#}
+{#        <h3 class="text-secondary mb-0">Topics</h3>#}
+{#        <h2 class="mb-5">What We Will Learn</h2>#}
+{#      </div>#}
+{#      <div class="row">#}
+{#        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">#}
+{#          <span class="service-icon rounded-circle mx-auto mb-3">#}
+{#            <i class="icon-screen-desktop"></i>#}
+{#          </span>#}
+{#          <h4>#}
+{#            <strong>Python Programming</strong>#}
+{#          </h4>#}
+{#          <p class="text-faded mb-0">One of the most popular languages!</p>#}
+{#        </div>#}
+{#        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">#}
+{#          <span class="service-icon rounded-circle mx-auto mb-3">#}
+{#            <i class="icon-list"></i>#}
+{#          </span>#}
+{#          <h4>#}
+{#            <strong>Flask</strong>#}
+{#          </h4>#}
+{#          <p class="text-faded mb-0">A lightweight WSGI web application framework designed to make getting started quick and easy, able to scale up to complex applications.</p>#}
+{#        </div>#}
+{#        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">#}
+{#          <span class="service-icon rounded-circle mx-auto mb-3">#}
+{#            <a href="http://www.google.com"><i class="icon-layers"></i></a>#}
+{##}
+{#          </span>#}
+{#          <h4>#}
+{#            <strong>Design Patterns</strong>#}
+{#          </h4>#}
+{#          <p class="text-faded mb-0">Most Used in Industry!</p>#}
+{#        </div>#}
+{#        <div class="col-lg-3 col-md-6">#}
+{#          <span class="service-icon rounded-circle mx-auto mb-3">#}
+{#            <i class="icon-wallet"></i>#}
+{##}
+{#          </span>#}
+{#          <h4>#}
+{#            <strong>Unit Testing</strong>#}
+{#          </h4>#}
+{#          <p class="text-faded mb-0">To validate that each component of the software performs as designed.</p>#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{#  </section>#}
+
+{#  <!-- Callout -->#}
+{#  <section class="callout" id="projects">#}
+{#    <div class="container text-center">#}
+{#      <h2 class="mb-4">Projects</h2>#}
+{#        styles of buttons: class="btn btn-xl btn-light mr-4" or btn-dark or btn-secondary#}
+{##}
+{#        <table align="center">#}
+{#  <tr>#}
+{#    <td><a href="{{url_for('astronauts')}}" class="btn btn-xl btn-light mr-4 btn-block">Astronauts in Space</a></td>#}
+{#    <td><a href="{{url_for('apod')}}" class="btn btn-xl btn-light mr-4 btn-block">Astronomy Pic of the Day</a></td>#}
+{#    <td><a href="{{url_for('search')}}" class="btn btn-xl btn-light mr-4 btn-block">Mars Pictures</a></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <td><a href="{{url_for('air_quality_index')}}" class="btn btn-xl btn-light mr-4 btn-block">Air Quality and Pollution</a></td>#}
+{#    <td><a href="{{url_for('fda_recall')}}" class="btn btn-xl btn-light mr-4 btn-block">FDA Food Recall</a></td>#}
+{#    <td><a href="{{url_for('unknown')}}" class="btn btn-xl btn-light mr-4 btn-block">TBA</a></td>#}
+{#  </tr>#}
+{#</table>#}
+
+{#  <!-- Portfolio -->#}
+{#  <section class="content-section" id="portfolio">#}
+{#    <div class="container">#}
+{#      <div class="content-section-heading text-center">#}
+{#        <h3 class="text-secondary mb-0">Portfolio</h3>#}
+{#        <h2 class="mb-5">Recent Projects</h2>#}
+{#      </div>#}
+{#      <div class="row no-gutters">#}
+{#        <div class="col-lg-6">#}
+{#          <a class="portfolio-item" href="#">#}
+{#            <span class="caption">#}
+{#              <span class="caption-content">#}
+{#                <h2>Stationary</h2>#}
+{#                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>#}
+{#              </span>#}
+{#            </span>#}
+{#            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">#}
+{#          </a>#}
+{#        </div>#}
+{#        <div class="col-lg-6">#}
+{#          <a class="portfolio-item" href="#">#}
+{#            <span class="caption">#}
+{#              <span class="caption-content">#}
+{#                <h2>Ice Cream</h2>#}
+{#                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>#}
+{#              </span>#}
+{#            </span>#}
+{#            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">#}
+{#          </a>#}
+{#        </div>#}
+{#        <div class="col-lg-6">#}
+{#          <a class="portfolio-item" href="#">#}
+{#            <span class="caption">#}
+{#              <span class="caption-content">#}
+{#                <h2>Strawberries</h2>#}
+{#                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>#}
+{#              </span>#}
+{#            </span>#}
+{#            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">#}
+{#          </a>#}
+{#        </div>#}
+{#        <div class="col-lg-6">#}
+{#          <a class="portfolio-item" href="#">#}
+{#            <span class="caption">#}
+{#              <span class="caption-content">#}
+{#                <h2>Workspace</h2>#}
+{#                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>#}
+{#              </span>#}
+{#            </span>#}
+{#            <img class="img-fluid" src="static/img/portfolio-4.jpg" alt="">#}
+{#          </a>#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{#  </section>#}
+
+  <!-- Call to Action -->
+{#  <section class="content-section bg-primary text-white">#}
+{#    <div class="container text-center">#}
+{#      <h2 class="mb-4">Projects</h2>#}
+{#        styles of buttons: class="btn btn-xl btn-light mr-4" or btn-dark or btn-secondary#}
+{##}
+{#        <table align="center">#}
+{#  <tr>#}
+{#    <td><a href="{{url_for('astronauts')}}" class="btn btn-secondary my-4">Project 1</a></td>#}
+{#    <td><a href="{{url_for('apod')}}" class="btn btn-secondary my-4">Project 2</a></td>#}
+{#    <td><a href="{{url_for('search')}}" class="btn btn-secondary my-4">Project 3</a></td>#}
+{#  </tr>#}
+{#  <tr>#}
+{#    <td><a href="{{url_for('air_quality_index')}}" class="btn btn-secondary my-4">Project 4</a><br></td>#}
+{#    <td><a href="{{url_for('fda_recall')}}" class="btn btn-secondary my-4">Project 5</a></td>#}
+{#    <td><a href="{{url_for('unknown')}}" class="btn btn-secondary my-4">Project 6</a></td>#}
+{#  </tr>#}
+{#</table>#}
+{##}
+{##}
+{##}
+{#    </div>#}
+{#  </section>#}
+
+  <!-- Map -->
+{#  <section id="contact" class="map">#}
+{#    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.3274952962543!2d-80.37690267385182!3d25.75974419242616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bf2e414fde0f%3A0xae469ac7fb6b92f0!2sFlorida+International+University!5e0!3m2!1sen!2sus!4v1563081546797!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>"></iframe>#}
+{#    <br />#}
+{#    <small>#}
+{#      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.3274952962543!2d-80.37690267385182!3d25.75974419242616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bf2e414fde0f%3A0xae469ac7fb6b92f0!2sFlorida+International+University!5e0!3m2!1sen!2sus!4v1563081546797!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>"></a>#}
+{#    </small>#}
+{#  </section>#}
+
+    {% endblock %}
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="http://people.cis.fiu.edu/greis/">
+            <i class="icon-home"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/gregorymurad/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+          <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/gregorymurad">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+          <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://scholar.google.com/citations?user=6MPWyYsAAAAJ&hl=en">
+            <i class="icon-social-google"></i>
+          </a>
+        </li>
+      </ul>
+            <p class="text-muted small mb-0">Design Copyright (c)2013-2019 Blackrock Digital LLC</p>
+        <p class="text-muted small mb-0">Copyright (c)2019 Gregory Murad Reis</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="static/js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>
