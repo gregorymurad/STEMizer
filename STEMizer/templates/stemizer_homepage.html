@@ -104,50 +104,14 @@ pre {
 
 		<!-- Started Background -->
 		<div class="started-bg">
-			<div class="slide" style="background-image: url(../../static/vita/images/works/school.jpg);"></div>
+			<div class="slide" style="background-image: url(../static/vita/images/works/school.jpg);"></div>
 		</div>
-		<!-- Header -->
+		<!-- Header
 		<header>
 			<div class="top-menu">
 				<ul>
 					<li class="active">
 						<a class="btn_animated" href="#home-section"><span class="circle">Home</span></a>
-					</li>
-					<li>
-						<a class="btn_animated" href="#about-section"><span class="circle">Book 1</span></a>
-					</li>
-					<li>
-						<a class="btn_animated" href="#skills-section"><span class="circle">Book 2</span></a>
-					</li>
-					<li>
-						<a class="btn_animated" href="#experience-section"><span class="circle">Book 3</span></a>
-					</li>
-					<li>
-						<a class="btn_animated" href="{{ url_for('chapter4') }}"><span class="circle">Book 4</span></a>
-					</li>
-					<li>
-						<a class="btn_animated" href="#works-section"><span class="circle">Book 5</span></a>
-					</li>
-					<li>
-						<a class="btn_animated" href="#works-section"><span class="circle">Book 6</span></a>
-					</li>
-					<li>
-						<a class="btn_animated" href="#clients-section"><span class="circle">Book 7</span></a>
-					</li>
-					<li>
-						<a class="btn_animated" href="#pricing-section"><span class="circle">Book 8</span></a>
-					</li>
-					<li>
-						<a class="btn_animated" href="#blog-section"><span class="circle">Book 9</span></a>
-					</li>
-                    <li>
-						<a class="btn_animated" href="#blog-section"><span class="circle">Book 10</span></a>
-					</li>
-                    <li>
-						<a class="btn_animated" href="#blog-section"><span class="circle">Book 11</span></a>
-					</li>
-                    <li>
-						<a class="btn_animated" href="#blog-section"><span class="circle">Book 12</span></a>
 					</li>
                     {% if current_user.is_authenticated %}
                         <li>
@@ -168,7 +132,7 @@ pre {
 				</ul>
 				<a href="#" class="menu-btn"><span></span></a>
 			</div>
-		</header>
+		</header>-->
     </div>
 			<!-- Wrapper -->
 			<div class="wrapper">
@@ -180,7 +144,7 @@ pre {
 							<div class="text-box">
 
 								<h1>Welcome to STEMizer / Bem-Vindo ao STEMizer</h1>
-								<div class="blog-detail">Escolha o idioma / Choose the language</span></div>
+								<div class="blog-detail">Escolha o idioma / Choose the language</div>
 
 								<!--<div class="blog-image">
 									<img src="../../static/vita/images/blog/blog1.jpg" alt="">
@@ -189,39 +153,66 @@ pre {
 								<div class="blog-content">
 
 
-            <p class="lead mb-2">An online educational tool to apply Robotics concepts into STEM fields</p>
-  <section class="content-section" id="portfolio">
-<div class="container">
-      <div class="content-section-heading text-center">
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="{{url_for('login')}}">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>English</h2>
-                <p class="mb-0">Welcome to STEMizer</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="static/vita/images/usa.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="{{url_for('login')}}">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Português</h2>
-                <p class="mb-0">Bem-vindo ao STEMizer</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="static/vita/images/br.jpg" alt="">
-          </a>
-        </div>
+            <p class="lead mb-2">Escolha o idioma / Choose the language</p>
 
 
-      </div>
-</div>
-  </section>
+
+
+			<!-- Wrapper -->
+			<div class="wrapper">
+
+				<!-- Blog -->
+				<div class="section blog-posts" id="blog-section">
+					<div class="row">
+						<div class="col col-m-12 col-t-6 col-d-6">
+							<div class="blog_item animated">
+								<div class="image">
+									<a href="{{url_for('login')}}"><img src="static/vita/images/usa.jpg" alt="" /></a>
+								</div>
+								<div class="content-box">
+									<!--<div class="i_title">
+										<div class="icon-book"></div>
+									</div>-->
+									<div class="category_bts">
+										<a href="#" class="category">#stem</a>
+										<a href="#" class="category">#robotics</a>
+									</div>
+									<a href="{{url_for('login')}}" class="name">Welcome to STEMizer</a>
+									<p>
+										An online educational tool to apply Robotics concepts into STEM fields
+									</p>
+									<a href="{{url_for('login')}}" class="btn btn_animated"><span class="circle">Begin</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col col-m-12 col-t-6 col-d-6">
+							<div class="blog_item animated">
+								<div class="image">
+									<a href="{{url_for('login')}}"><img src="static/vita/images/br.jpg" alt="" /></a>
+								</div>
+								<div class="content-box">
+									<!--<div class="i_title">
+										<div class="icon-book"></div>
+									</div>-->
+									<div class="category_bts">
+										<a href="#" class="category">#stem</a>
+										<a href="#" class="category">#robótica</a>
+									</div>
+									<a href="{{url_for('login')}}" class="name">Bem-vindo ao STEMizer</a>
+									<p>
+										Uma ferramente online de educação para aplicar conceitos de Robótica nas áreas de STEM
+									</p>
+									<a href="{{url_for('login')}}" class="btn btn_animated"><span class="circle">Começar</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+
+
+
+
 
 
             </div>
@@ -234,7 +225,12 @@ pre {
 
 			</div>
 
-    {% endblock %}
+        {% endblock %}
+
+<!-- Footer -->
+			<footer>
+				<div class="copy">© 2019 STEMizer. All rights reserved.</div>
+			</footer>
 	<!-- jQuery Scripts -->
 	<script src="../../static/vita/js/jquery.min.js"></script>
 	<script src="../../static/vita/js/owl.carousel.min.js"></script>
